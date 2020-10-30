@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA grid</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../reoc-renew-v2/css/furnace.min.css">
+      <link rel="stylesheet" href="../reoc-renew-v2/css/lead.css">
+      <script type="text/javascript" src="js/furnace.min.js"></script>
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+
+
+      </script>
+      <style type="text/css">
+         .container{background:rgba(255,100,50,0.0);}
+      </style>
+   </head>
+   <body class="live-demo au-body au-grid js">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../reoc-renew-v2/img/CASALOGO-white-i.svg" width="256"></a>
+                  </div>
+                  <div class="user">
+                     <div class="au-body au-body--dark">
+                        <a class="au-btn au-btn--dark" href="signed-out.html">Sign out</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="banner">
+            <div class=container>
+               This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+            </div>
+         </div>
+         <div class="body">
+            <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="welcome.html">myCASA</a></li>
+                     <li>CASA.142FTO.1111 details</li>
+                  </ul>
+               </nav>
+               <header class="au-header" role="banner">
+                  <h1>CASA.142FTO.1111 details</h1>
+                  <a class="au-direction-link au-direction-link--left" href="mycasa.html">Back</a>
+               </header>
+
+
+		<div class="dec">
+		<h3>Application summary</h3>
+
+		<p><strong>Total fee payable:</strong> $480</p>
+
+			<br />
+
+		<div aria-label="Callout description1">
+			<ul>
+
+				<li>Please be aware you can only make this application if there are no changes to your current CASA.142FTO.
+</li>
+				<li>Any changes required must be submitted through an <a href="#">application for certificate variation</a>.
+
+				</li>
+				<li>The subsequent issue will be valid for three years</li>
+				<!--
+				<li>It will take approximately 3-5 business days for your CASA.TAAOC.0000 to be updated. If your CASA.TAAOC.0000 expires in this period you may continue operating until it has been officially extended.</li>-->
+			</ul>
+
+
+
+		</div>
+			<br />
+		<h3>Declaration</h3><br />
+			<div class="au-callout" aria-label="Callout description1">
+			<label class="au-control-input m-t-0">
+				<input class="au-control-input__input" type="checkbox" name="checkbox-ex-dec" id="declaration">
+				<span class="au-control-input__text form-text p-t-0">
+					I declare that my application is under the same conditions and details as currently relate to CASA.142FTO.1111 and the information provided in this application form is true and correct. Giving false or misleading information is an offence under the regulations.
+				</span>
+			</label>
+			</div>
+
+	</div>
+<p>&nbsp;</p>
+<div class="declaration">
+	<a href="payment2.html" class="au-btn" id="next">Proceed to Payment</a>
+	<p class="westpac">You will be directed to Westpac for payment</p>
+</div>
+
+		</div>
+	</div>
+</div><!-- container -->
+			</div>
+			</div>
+	</div>
+
+
+<div class="footer">
+		<div class="footer-wrapper">
+			<iframe src="../reoc-renew-v2footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+</main>
+
+<script>
+//$('.declaration').hide();
+$('#next').click(function(){
+	//$('#declaration').change(function(){
+	checked = $('input[name="checkbox-ex-dec"]').is(':checked');
+		 if(checked == false){
+				 $('#dec-error').removeClass('hidden');
+				 $('html').scrollTop(0);
+				 return false;
+		 }
+		 else {
+			 $('#dec-error').addClass('hidden');
+			 return true;
+		 }
+	//});
+
+});
+
+</script>
+
+
+</body>
+</html>

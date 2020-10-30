@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+
+
+      </script>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="../mycasa-dec-2020/index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+
+                  	<div class="casa-sign-out">
+
+                        <div class="au-body au-body--dark">
+                            <a class="au-btn au-btn--dark" href="signed-out.html">Sign out</a>
+                        </div>
+
+                    </div>
+</div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="../mycasa-dec-2020/dashboard-org.html">myCASA</a></li>
+                      <li><a href="#">Manage roles and users</a></li>
+                    <li>User details</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">User details</h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+                      <h2 class="break desktop au-header-heading">Add role</h2>
+					<section class="au-callout">
+<p><strong>Name:</strong> Heidi Gilmore<br>
+<strong>ARN:</strong> 1478952</p>
+					</section>
+
+
+
+					<div class="au-form-group">
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Please select a role</h3>
+									<!--<span class="au-hint-text">CEO and DAMP contact cannot be assigned here, and are required to be changed through the main Manage roles and users page.&nbsp; &nbsp; &nbsp; &nbsp;</span>-->
+                        </legend>
+
+
+
+
+
+
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="contact-person" id="contact-person">
+  <label class="au-control-input__text" for="contact-person">Contact person</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="authorised-rep" id="authorised-rep">
+  <label class="au-control-input__text" for="authorised-rep">Authorised representative</label>
+</div>
+
+
+
+
+   <div class="au-form-group">
+
+								<div id="navigate" "navigate2">
+			    <a href="application-summary.html" class="au-btn au-btn--primary">Next</a>
+            </div>
+
+
+
+
+
+
+
+				</div>
+
+
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+          <div class="footer">
+
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+ <script>
+        $("#navigate a"). click(function(){
+				var radioValue = $("input[name='role-choice']:checked"). val();
+				window.location.href=radioValue+".html";
+			 });
+       </script>
+   </body>
+</html>
