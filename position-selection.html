@@ -88,7 +88,7 @@
 </div>
 
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="ceo" value="add-user-role">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="ceo" value="CEO">
   <label class="au-control-input__text" for="ceo">Chief Executive Officer</label>
 </div>
 
@@ -169,7 +169,7 @@
        <script>
                $("#navigate a"). click(function(){
 				var radioValue = $("input[name='radio-ex1']:checked"). val();
-				window.location.href=radioValue+".html";
+				window.location.href="add-user-role.html#"+radioValue;
 			 });
        </script>
    </body>

@@ -128,8 +128,8 @@
 
 
                                             <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="remote-operators-cdrtificate" value="ReOC">
-  <label class="au-control-input__text" for="remote-operators-cdrtificate">ReOC <span class="badge badge-warning">Expiring soon</span></label>
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="remote-operators-certificate" value="ReOC">
+  <label class="au-control-input__text" for="remote-operators-certificate">ReOC</label>
 </div>
 
 
@@ -177,6 +177,16 @@
                $("#navigate a"). click(function(){
 				var radioValue = $("input[name='radio-ex1']:checked"). val();
 				window.location.href=radioValue+".html";
+			 });
+           
+           $("input:radio"). change(function(){
+				$("#remote-operators-certificate"). prop("disabled", false)
+               
+			 });
+           
+           $("#certificate-renewal"). change(function(){
+				$("#remote-operators-certificate"). prop("disabled", true)
+               
 			 });
        </script>
    </body>
